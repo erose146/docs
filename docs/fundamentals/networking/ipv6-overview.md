@@ -3,7 +3,7 @@ title: "Internet Protocol version 6 (IPv6) overview"
 description: Learn about the IPv6 protocol and how it differs from IPv4.
 author: IEvangelist
 ms.author: dapine
-ms.date: 08/24/2022
+ms.date: 08/24/2019
 helpviewer_keywords: 
 - "Internet Protocol version 6"
 - "Internet Protocol version 6, addresses in"
@@ -173,9 +173,9 @@ To use the IPv6 protocol, ensure that you are running a version of the operating
 
 | OS IPv6 enabled? | Code IPv6 enabled? | Description                                                                                            |
 |------------------|--------------------|--------------------------------------------------------------------------------------------------------|
-| ❌ No            | ❌ No               | Can parse IPv6 addresses.                                                                              |
-| ❌ No            | ✔️ Yes             | Can parse IPv6 addresses.                                                                              |
-| ✔️ Yes          | ❌ No               | Can parse IPv6 addresses and resolve IPv6 addresses using name resolution methods not marked obsolete. |
+| x No            | x No               | Can parse IPv6 addresses.                                                                              |
+| x No            | ✔️ Yes             | Can parse IPv6 addresses.                                                                              |
+| ✔️ Yes          | x No               | Can parse IPv6 addresses and resolve IPv6 addresses using name resolution methods not marked obsolete. |
 | ✔️ Yes          | ✔️ Yes             | Can parse and resolve IPv6 addresses using all methods including those marked obsolete.                |
 
 IPv6 is enabled by default. To configure this switch in an environment variable, use the `DOTNET_SYSTEM_NET_DISABLEIPV6` environment variable. For more information, see [.NET environment variables: DOTNET_SYSTEM_NET_DISABLEIPV6](../../core/tools/dotnet-environment-variables.md#dotnet_system_net_disableipv6).
